@@ -1,0 +1,28 @@
+/*
+
+"p" is for all p labels
+
+"div" is for all div labels and its components
+
+"div p" is for all p labels which are in div label
+
+"div, p" is for all p and div labels, we can add more with comma
+
+"p + div" is for div label which are after the p label, not inside (at same level)
+
+*/
+
+/*  
+div p{
+    color: red;
+}
+*/
+
+/* 'div p' is superior, so '.container' can't override that */
+/* With this, we can adjust p lables which are in div which is in .container*/
+.container div p{
+    color: blue;
+}
+
+
+

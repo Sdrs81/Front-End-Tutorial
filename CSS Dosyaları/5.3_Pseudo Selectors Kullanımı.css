@@ -1,0 +1,49 @@
+
+/* Pseudo Elements */
+p::first-line{
+    color: brown;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+p::first-letter{
+    font-size: 50px;
+}
+
+/* Pseudo Class */
+
+ul li{
+    margin-bottom: 10px;
+    padding-bottom: 10px;   
+}
+
+ul li:first-child{
+    background-color: aqua;
+}
+
+ul li:last-child{
+    background-color: blueviolet;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: white;
+    background-color: aqua;
+}
+
+/* if there are four value in padding, this means 'top,right,bottom,left' ,
+    if there are three value, 'top, right and left, bottom' ,
+    if there are two value, "top and bottom, right and left" ,
+    if there is one value, this is for all values
+*/
+a{
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+}

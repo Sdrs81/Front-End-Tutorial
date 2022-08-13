@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Kullanımı</title>
+
+    <style>
+
+        .kutu{
+            width: 400px;
+            height: 150px;
+            background-color: lightgray;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #kutu1{
+            border: 5px solid blue;
+            border-radius: 10px;
+            /*
+                50% value is for exact circle
+                but we need the same values for width and height first
+            */
+        }
+        #kutu2{
+            border-top: 3px solid red;
+            border-right-style: groove;
+        }
+        #kutu3{
+            border-width: 5px;
+            border-style: double;
+            border-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="kutu" id="kutu1">Kutu 1</div>
+    <div class="kutu" id="kutu2">Kutu 2</div>
+    <div class="kutu" id="kutu3">Kutu 3</div>
+   
+</body>
+
+</html>

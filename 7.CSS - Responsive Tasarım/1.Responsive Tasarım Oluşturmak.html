@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tasarım Oluşturmak</title>
+
+    <style>
+        /*h1{
+            font-size: 40px;
+        }
+
+        @media screen and (max-width:700px) {
+            h1{
+                font-size: 30px;
+                color: red;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            h1{
+                font-size: 15px;
+                color: green;
+            }
+        }*/
+
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* this code part is for every component
+            Means that border doesn't use space in page
+        */
+
+        .kutu {
+            width: 25%;
+            height: 250px;
+            background: lightskyblue;
+            float: left;
+            border: 1px solid black;
+        }
+
+        @media screen and (max-width:700px) {
+            .kutu {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .kutu {
+                width: 100%;
+            }   
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Lorem ipsum dolor sit amet consectetur.</h1> -->
+
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+    <div class="kutu"></div>
+
+
+</body>
+
+</html>

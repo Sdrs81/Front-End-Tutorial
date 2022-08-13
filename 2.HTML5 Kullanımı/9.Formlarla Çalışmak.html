@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- With 'name' attribute, we can group the components
+        (Like radio buttons down there).
+        Also, we can pass datas with this attribute to 
+        other pages, db's, server's etc...
+    -->
+    <form>
+        <p>
+            Ad: <input type="text" name="ad">
+        </p>
+
+        <p>
+            Soyad: <input type="text" name="soyad" >
+        </p>
+
+        <p>
+            Eposta: <input type="email" name="email">    
+        </p>
+
+        <p>
+            Şifre: <input type="password" name="password">
+        </p>
+
+        <p> 
+            Şifreyi Hatırla <input type="checkbox" name="parolayiHatirla">
+        </p>
+
+        <p>
+            Cinsiyet: <br>
+            Erkek: <input type="radio" name="cinsiyet">
+            Kadın: <input type="radio" name="cinsiyet">
+        </p>
+
+        <p>
+            Hobileriniz <br>
+            Film izlemek: <input type="checkbox" name="hobi">
+            Spor Yapmak: <input type="checkbox" name="hobi">
+            Kitap okumak: <input type="checkbox" name="hobi">
+        </p>
+
+        <p>
+            Doğum yeri: <br>
+            <select name="dogumYeri">
+                <option>Eskişehir</option>
+                <option>İzmir</option>
+                <option>Antalya</option>
+            </select>
+        </p>
+
+        <!-- We can choose multiple options while we are 
+            holding down ctrl button
+        -->
+        <p>
+            Çoklu Yer Seçimi: <br>
+            <select multiple name="cokluYer">
+                <option>Eskişehir</option>
+                <option>İzmir</option>
+                <option>Antalya</option>
+            </select>
+        </p>
+    </form>
+
+</body>
+
+</html>
