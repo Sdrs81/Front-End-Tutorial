@@ -66,6 +66,7 @@ nav {
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: fixed;
+    z-index: 500;
 }
 
 #logo-box {
@@ -122,9 +123,17 @@ header h2 {
     font-weight: 300;
 }
 
-.star-light {
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-dark {
+    border-color: #2D3D4F;
+}
+
+.star-light, .star-dark {
     border: none;
-    border-top: 0.4rem solid #fff;
+    border-top: 0.4rem solid;
     border-radius: 10px;
     max-width: 25rem;
     margin: 2.5rem auto;
@@ -133,12 +142,33 @@ header h2 {
 }
 
 .star-light::after {
-    content: "\2605";
     color: #fff;
+    background-color: #1ABC9B;
+}
+
+.star-dark::after {
+    color: #2D3D4F;
+    background-color: #fff;
+}
+
+.star-light::after, .star-dark::after {
+    content: "\2605";
     font-weight: 900;
     font-size: 3.2rem;
     position: relative;
     top: -30px;
-    background-color: #1ABC9B;
     padding: 0 8px;
+}
+
+/* Portfolio */
+#portfolio {
+    height: 600px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+#portfolio h2{
+    font-size: 4.8rem;
+    color: #2D3D4F;
 }
