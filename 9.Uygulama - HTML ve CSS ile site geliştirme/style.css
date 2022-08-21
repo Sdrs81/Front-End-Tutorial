@@ -16,7 +16,12 @@ body {
     background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     font-family: Montserrat;
 }
@@ -29,7 +34,7 @@ ul {
     list-style-type: none;
 }
 
-.img-fluid{
+.img-fluid {
     max-width: 256px;
     height: auto;
 }
@@ -98,14 +103,42 @@ nav {
 }
 
 /* Header */
-header{
+header {
     background-color: #1ABC9B;
     height: 700px;
     padding-top: calc(106px + 7rem);
     text-align: center;
 }
 
-header h1{
+header h1 {
     color: #fff;
     font-size: 6rem;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.star-light {
+    border: none;
+    border-top: 0.4rem solid #fff;
+    border-radius: 10px;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-light::after {
+    content: "\2605";
+    color: #fff;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -30px;
+    background-color: #1ABC9B;
+    padding: 0 8px;
 }
