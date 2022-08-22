@@ -131,7 +131,8 @@ hr.star-dark {
     border-color: #2D3D4F;
 }
 
-.star-light, .star-dark {
+.star-light,
+.star-dark {
     border: none;
     border-top: 0.4rem solid;
     border-radius: 10px;
@@ -151,7 +152,8 @@ hr.star-dark {
     background-color: #fff;
 }
 
-.star-light::after, .star-dark::after {
+.star-light::after,
+.star-dark::after {
     content: "\2605";
     font-weight: 900;
     font-size: 3.2rem;
@@ -168,7 +170,26 @@ hr.star-dark {
     text-align: center;
 }
 
-#portfolio h2{
+#portfolio h2 {
     font-size: 4.8rem;
     color: #2D3D4F;
+}
+
+.img-fluid-p {
+    /* Image can be maximum for its own width,
+    that affects just image. That max-width is 
+    being adjust itself with upper div */
+    max-width: 100%; 
+    height: auto;
+}
+
+.col {
+    float: left;
+    width: 33.333%;
+    padding: 10px;
+
+}
+
+.portfolio-item {
+    
 }
