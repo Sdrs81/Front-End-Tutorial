@@ -191,5 +191,33 @@ hr.star-dark {
 }
 
 .portfolio-item {
-    
+    position: relative;
+}
+
+.portfolio-item img {
+    display: block;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1ABC9B;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.img-overlay .icon {
+    color: #fff;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.portfolio-item:hover .img-overlay {
+    opacity: 0.8;
 }
