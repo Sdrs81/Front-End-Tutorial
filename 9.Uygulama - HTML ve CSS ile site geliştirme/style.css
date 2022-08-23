@@ -40,9 +40,13 @@ section {
     text-align: center;
 }
 
+.btn-large {
+    font-size: 2rem;
+    padding: 2.2rem 1.6rem;
+}
+
 .btn {
     margin-top: 2rem;
-    font-size: 2rem;
     font-weight: 400;
     display: inline-block;
     border: 2px solid #fff;
@@ -51,12 +55,18 @@ section {
     transition: all 0.5s;
 }
 
+.btn-social {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
 .btn-outline {
     color: #fff;
     border-color: #fff;
     background-color: transparent;
-    padding: 2.2rem 1.6rem;
-
 }
 
 .btn-outline:hover {
@@ -205,9 +215,7 @@ hr.star-dark {
 }
 
 /* Portfolio */
-#portfolio {
-    
-}
+#portfolio {}
 
 #portfolio h2 {
     font-size: 4.8rem;
@@ -218,7 +226,7 @@ hr.star-dark {
     /* Image can be maximum for its own width,
     that affects just image. That max-width is 
     being adjust itself with upper div */
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
 }
 
@@ -255,7 +263,7 @@ hr.star-dark {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
 }
 
 .portfolio-item:hover .img-overlay {
@@ -313,13 +321,49 @@ hr.star-dark {
     margin-bottom: 4rem;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     border: none;
     width: 100%;
     display: block;
     font-size: 2.4rem;
 }
 
-.form-group input:focus, .form-group textarea:focus {
-    outline: 0; /* It close focus option for input */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 0;
+    /* It close focus option for input */
+}
+
+/* Footer */
+footer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2c3e4f;
+    color: #fff;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 2.4rem;
+}
+
+footer p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+/* Copyright */
+
+.copyright {
+    background-color: #19262F;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: #fff;
+    text-align: center;
 }
