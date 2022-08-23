@@ -246,6 +246,10 @@ nav {
         right: 5px;
         font-size: 3rem;
     }
+
+    #nav-links.responsive li:not(:first-child) {
+        display: none;
+    }
 }
 
 /* Header */
