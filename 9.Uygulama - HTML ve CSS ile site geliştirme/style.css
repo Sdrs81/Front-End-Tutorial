@@ -98,11 +98,38 @@ section {
 }
 
 .container {
-    width: 1140px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+/* Responsive Breakpoints */
+@media (min-width:576px) {
+
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width:768px) {
+    
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width:992px) {
+    
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px) {
+    
+    .container {
+        max-width: 1140px;
+    }
 }
 
 .text-uppercase {
