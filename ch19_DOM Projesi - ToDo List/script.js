@@ -24,16 +24,16 @@ function evenListeners() {
 
 
 // Diziden Todo Elemanlarını Aktarma
-function loadItems(){
+function loadItems() {
     todos = getItemsFromLS();
-    todos.forEach(function(item){
+    todos.forEach(function (item) {
         createItem(item);
     });
 }
 
 // Todo'ları Storage'a Ekleme
 function getItemsFromLS() {
-    if(localStorage.getItem("todos") == null){
+    if (localStorage.getItem("todos") == null) {
         todos = [];
     } else {
         todos = JSON.parse(localStorage.getItem("todos"));
@@ -41,13 +41,13 @@ function getItemsFromLS() {
     return todos;
 }
 // Set item to local storage
-function setItemToLS(newTodo){
+function setItemToLS(newTodo) {
     todos = getItemsFromLS();
     todos.push(newTodo);
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-function createItem(newTodo){
+function createItem(newTodo) {
     // li oluşturma
     const li = document.createElement("li");
     li.className = "list-group-item list-group-item-secondary";
@@ -85,6 +85,7 @@ function deleteItem(e) {
     if (e.target.className === "fas fa-times") {
         if (confirm("Silmek istediğinize emin misiniz?")) {
             e.target.parentElement.parentElement.remove();
+            deleteTodoFromStorage(e.target.parentElement.parentElement.textContent);
         }
     }
 
@@ -95,23 +96,41 @@ function deleteItem(e) {
 function deleteAllItems(e) {
 
     // Yöntem 1
-    if (confirm("Hepsini silmek istiyor musunuz?")) {
-        tasklist.childNodes.forEach(function (item) {
-            if (item.nodeType === 1) {
-                item.remove();
-            }
-        });
-    }
+    // if (confirm("Hepsini silmek istiyor musunuz?")) {
+    //     tasklist.childNodes.forEach(function (item) {
+    //         if (item.nodeType === 1) {
+    //             item.remove();
+    //         }
+    //     });
+    // }
 
     //Yöntem 2
     //tasklist.innerHTML = "";
+
+    // Local storage ile birlikte silme yöntemi
+    if (confirm("Hepsini silmek istiyor musunuz?")) {
+        while(tasklist.firstChild){
+            tasklist.removeChild(tasklist.firstChild);
+        }
+        localStorage.clear();
+    }
 
     e.preventDefault();
 }
 
 
+// Todo'ları Storage'dan Silme
+function deleteTodoFromStorage(deleteTodo) {
+    let todos = getItemsFromLS();
 
+    todos.forEach(function (todo, index) {
+        if (todo == deleteTodo) {
+            todos.splice(index, 1);
+        }
+    });
 
+    localStorage.setItem("todos", JSON.stringify(todos))
+}
 
 
 
