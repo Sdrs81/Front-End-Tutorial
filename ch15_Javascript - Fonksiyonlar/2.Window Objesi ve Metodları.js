@@ -24,7 +24,7 @@
 
 //window.location.href="https://www.udemy.com"  // Goes to site that we want
 
-//window.location.reload();
+// window.location.reload();
 
 
 // navigator

@@ -12,17 +12,16 @@
 
 */
 
-/*  
 div p{
     color: red;
 }
-*/
 
-/* 'div p' is superior, so '.container' can't override that */
 /* With this, we can adjust p lables which are in div which is in .container*/
 .container div p{
     color: blue;
 }
+
+/* '.container div p' is superior, so 'div p' can't override that */
 
 
 

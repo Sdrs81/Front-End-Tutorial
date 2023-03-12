@@ -1,4 +1,4 @@
-// alert("Siteye hoşgeldiniz");
+ alert("Siteye hoşgeldiniz");
 
 console.log("Hoş Geldiniz");
 console.log(123);
